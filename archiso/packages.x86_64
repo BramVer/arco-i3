@@ -107,9 +107,9 @@ xf86-video-amdgpu
 xf86-video-ati
 #xf86-video-dummy
 xf86-video-fbdev
-xf86-video-intel
-xf86-video-nouveau
-xf86-video-openchrome
+#xf86-video-intel
+#xf86-video-nouveau
+#xf86-video-openchrome
 #xf86-video-qxl
 xf86-video-vesa
 xf86-video-vmware
@@ -125,13 +125,13 @@ mesa
 #nvidia-390xx
 #nvidia-390xx-utils
 #libva-intel-driver
-#libva-vdpau-driver
+libva-vdpau-driver
 #mesa-demos
-#mesa-vdpau
+mesa-vdpau
 #opencl-mesa
 #primus
 #vulkan-intel
-#vulkan-radeon
+vulkan-radeon
 
 ###base and base-devel
 base
@@ -172,6 +172,10 @@ bluez-libs
 bluez-utils
 #bluez-firmware
 pulseaudio-bluetooth
+
+# CUSTOM
+bluetoothctl
+
 
 ###network
 avahi
@@ -240,24 +244,24 @@ firefox
 #flashplugin
 #galculator
 #geany
-#gimp
+gimp
 gmrun
-#gsimplecal
+gsimplecal
 #guvcview
 imagemagick
 #inkscape
 #libreoffice-fresh
 lshw
-meld
+#meld
 #nitrogen
 numlockx
 #pragha
-#qbittorrent
-scrot
-#simplescreenrecorder
-termite
+qbittorrent
+#scrot
+simplescreenrecorder
+#termite
 variety
-#vlc
+vlc
 
 ###conky
 jq
@@ -293,6 +297,10 @@ kvantum-theme-arc
 
 ###utilities
 arandr
+
+# CUSTOM
+autorandr
+
 asciinema
 bash-completion
 #baobab
@@ -446,8 +454,8 @@ yay-bin
 #                               GAMES
 ###########################################################################
 
-#arcolinux-meta-steam
-#lutris
+arcolinux-meta-steam
+lutris
 #sauerbraten
 #xonotic
 
@@ -683,9 +691,16 @@ picom
 ###########################################################################
 
 ###i3wm
-i3status
-i3blocks
+#i3status
+#i3blocks
 i3-gaps
+
+###lx-applications
+#lxappearance
+lxappearance-gtk3
+#lxappearance-obconf
+#lxappearance-obconf-gtk3
+lxrandr
 
 ###########################################################################
 #                               OPENBOX
@@ -705,10 +720,10 @@ i3-gaps
 
 ###lx-applications
 #lxappearance
-lxappearance-gtk3
+#lxappearance-gtk3
 #lxappearance-obconf
 #lxappearance-obconf-gtk3
-lxrandr
+#lxrandr
 
 ###########################################################################
 #                                XFCE
@@ -718,8 +733,9 @@ lxrandr
 # https://www.archlinux.org/groups/x86_64/xfce4/
 exo
 garcon
-thunar
-thunar-volman
+#thunar
+#thunar-volman
+nautilus
 tumbler
 xfce4-appfinder
 xfce4-panel
@@ -778,3 +794,9 @@ xfce4-panel-profiles
 ###########################################################################
 #                                ISO SPECIFIC
 ###########################################################################
+telegram
+topgrade
+guake
+flameshot
+cheat
+bat
